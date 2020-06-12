@@ -14,3 +14,5 @@ We have just used 2 plugins to achieve this.
 To get your theme setup you can use the below link
 
 https://rxlabz.github.io/panache_web/#/
+
+Note :- If you are using the above link for theme generation make sure to change primarySwatch to a material color and add a theme for floatingactionbutton with a foreground color property. you can refer example in the config file. 
