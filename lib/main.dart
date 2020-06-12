@@ -1,3 +1,4 @@
+import 'package:darkmode/config/theme_config.dart';
 import 'package:darkmode/screens/splash_screen.dart';
 import 'package:darkmode/provider/theme_provider.dart';
 import 'package:flutter/material.dart';
@@ -73,18 +74,8 @@ class _MyAppState extends State<MyApp> {
           return MaterialApp(
             debugShowCheckedModeBanner: false,
             themeMode: widget.themeProvider.themeMode,
-            theme: ThemeData.light().copyWith(
-              primaryColor: Colors.white,
-              appBarTheme: AppBarTheme(
-                brightness: Brightness.light,
-              ),
-            ),
-            darkTheme: ThemeData.dark().copyWith(
-              primaryColor: Colors.black,
-              appBarTheme: AppBarTheme(
-                brightness: Brightness.dark,
-              ),
-            ),
+            theme: ThemeConfig().lightTheme,
+            darkTheme: ThemeConfig().darkTheme,
             home: SplashScreen(),
           );
         },
